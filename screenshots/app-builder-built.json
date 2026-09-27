@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Senda",
+      "hasCanvas": false,
+      "bodyTextLen": 253,
+      "bodyTextHash": "2a4632aead5880beb20fe5ea3d57411d928817ae7ed06b781060e0e9f8078758",
+      "bodyTextPrefix": "Senda Un tramo cada vez. Sonido Foco Descanso 25:00 Listo Inicia",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Senda",
+      "hasCanvas": false,
+      "bodyTextLen": 253,
+      "bodyTextHash": "2a4632aead5880beb20fe5ea3d57411d928817ae7ed06b781060e0e9f8078758",
+      "bodyTextPrefix": "Senda Un tramo cada vez. Sonido Foco Descanso 25:00 Listo Inicia",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

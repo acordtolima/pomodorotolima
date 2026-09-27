@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+
+  --color-bg: #e7dece;
+  --color-surface: #fbf7f0;
+  --color-ink: #1c2420;
+  --color-muted: #4d564e;
+  --color-line: #d5cbbd;
+  --color-focus: #245c43;
+  --color-focus-soft: #e3efe8;
+  --color-rest: #8f4a28;
+  --color-rest-soft: #f4e6da;
+  --color-on-accent: #fbf7f0;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100dvh;
+    background-color: var(--color-bg);
+    background-image: radial-gradient(
+      900px 420px at 50% -8%,
+      var(--color-focus-soft),
+      transparent 70%
+    );
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: var(--color-focus-soft);
+    color: var(--color-ink);
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+  }
+
+  input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+}
+
+.ring-arc {
+  transition: stroke-dashoffset 180ms linear;
+}
+
+.pip-live {
+  animation: senda-breathe 2.4s ease-in-out infinite;
+}
+
+@keyframes senda-breathe {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ring-arc {
+    transition: none;
+  }
+
+  .pip-live {
+    animation: none;
+    opacity: 1;
+  }
+}
